@@ -1,0 +1,61 @@
+{
+  "_copyright": "Copyright (c) 2024 Martin Bechard <martin.bechard@DevConsult.ca>",
+  "_license": "This software is licensed under the MIT License.",
+  "_file": "scripts/projectPackager.json",
+  "outputFolder": "project",
+  "skipFolders": [
+    "node_modules",
+    "project",
+    ".next",
+    ".git",
+    "logs",
+    "data",
+    "test_runs"
+  ],
+  "fileTypes": {
+    "js": {
+      "extensions": [".js", ".ts", ".tsx", ".jsx"],
+      "style": "block",
+      "prefix": "/**",
+      "linePrefix": " *",
+      "suffix": " */"
+    },
+    "json": {
+      "extensions": [".json"],
+      "style": "json",
+      "attributes": ["_copyright", "_license", "_file"],
+      "exclude": ["package.json", "package-lock.json", "tsconfig.json"]
+    },
+    "md": {
+      "extensions": [".md", ".mdx"],
+      "style": "markdown",
+      "prefix": "<!--",
+      "linePrefix": "",
+      "suffix": "-->"
+    },
+    "css": {
+      "extensions": [".css"],
+      "style": "block",
+      "prefix": "/*",
+      "linePrefix": " *",
+      "suffix": "*/"
+    },
+    "html": {
+      "extensions": [".html"],
+      "style": "html",
+      "prefix": "<!--",
+      "linePrefix": "",
+      "suffix": "-->"
+    },
+    "py": {
+      "extensions": [".py"],
+      "style": "block",
+      "prefix": "\"\"\"",
+      "linePrefix": "",
+      "suffix": "\"\"\""
+    }
+  },
+  "copyright": "Copyright (c) 2024 Martin Bechard <martin.bechard@DevConsult.ca>",
+  "backupFolder": "backups",
+  "maxNestingLevel": 1
+}
